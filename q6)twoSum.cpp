@@ -1,6 +1,9 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
+#include <algorithm> // for sort
 using namespace std;
 
+// Function to find two sum using two pointer approach
 vector<int> twoSum(vector<int> &nums, int target)
 {
     int n = nums.size();
@@ -12,10 +15,10 @@ vector<int> twoSum(vector<int> &nums, int target)
         arr.push_back({nums[i], i});
     }
 
-    // Step 2: Sort by value
+    // Step 2: Sort based on value
     sort(arr.begin(), arr.end());
 
-    // Step 3: Two pointers
+    // Step 3: Two pointer approach
     int left = 0, right = n - 1;
     while (left < right)
     {
@@ -34,5 +37,11 @@ vector<int> twoSum(vector<int> &nums, int target)
         }
     }
 
-    return {};
+    return {}; // If no solution
 }
+
+// Main function to test
+int main()
+{
+    vector<int> nums = {3, 2, 4};
+    int target = 6
