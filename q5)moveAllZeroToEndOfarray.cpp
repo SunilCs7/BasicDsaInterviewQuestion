@@ -1,60 +1,38 @@
+// Two pointer Approcah
+
+// Online C++ compiler to run C++ program online
 #include <iostream>
-#include <vector>
 using namespace std;
 
-// 🔹 Approach 1: Two-pointer - Place non-zero, then fill zeros
-void moveZerosToEndApproach1(vector<int> arr)
+void moveZerosToEnd(int arr[], int n)
 {
     int j = 0;
 
-    for (int i = 0; i < arr.size(); i++)
+    for (int i = 0; i < n; i++)
     {
         if (arr[i] != 0)
         {
-            arr[j] = arr[i];
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
             j++;
         }
     }
-
-    while (j < arr.size())
-    {
-        arr[j] = 0;
-        j++;
-    }
-
-    cout << "Approach 1 (Two-pointer placement): ";
-    for (int num : arr)
-        cout << num << " ";
-    cout << endl;
-}
-
-// 🔹 Approach 2: Swapping non-zero with front
-void moveZerosToEndApproach2(vector<int> arr)
-{
-    int j = 0;
-
-    for (int i = 0; i < arr.size(); i++)
-    {
-        if (arr[i] != 0)
-        {
-            swap(arr[i], arr[j]);
-            j++;
-        }
-    }
-
-    cout << "Approach 2 (Swapping): ";
-    for (int num : arr)
-        cout << num << " ";
-    cout << endl;
 }
 
 int main()
 {
-    vector<int> arr = {0, 1, 0, 3, 12};
+    // Write C++ code here
 
-    // Run both approaches
-    moveZerosToEndApproach1(arr);
-    moveZerosToEndApproach2(arr);
+    int arr[] = {1, 2, 0, 0, 0, 4, 5, 6, 0, 5, 55, 0, 1, 0, 3, 1, 2};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    moveZerosToEnd(arr, n);
+
+    cout << "After moving zeros to the end: ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
 
     return 0;
 }

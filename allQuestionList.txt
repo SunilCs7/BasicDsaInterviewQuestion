@@ -1,6 +1,4 @@
-Bilkul bhai! Main tujhe **interview ke liye basic DSA (Data Structures and Algorithms)** ke woh **common questions** de sakta hoon jo beginner-level development roles ke interviews mein puchhe jaate hain — especially agar tu **fresher** ya **1-2 project experience** ke saath jaa raha hai.
 
----
 
 ### ✅ **Top Basic DSA Interview Questions (Development Roles ke liye)**
 
@@ -9,7 +7,7 @@ Bilkul bhai! Main tujhe **interview ke liye basic DSA (Data Structures and Algor
 2. **Find the missing number in a sequence**  
 3. **Reverse an array/string**  
 4. **Check if a string is a palindrome**  
-5. **Move all zeros to end of array**  
+5. **Move all zeros to end of array**   
 6. **Kadane’s Algorithm (Maximum Subarray Sum)**  
 7. **Two Sum problem** (Find two numbers that add up to a target)
 
@@ -43,9 +41,3 @@ Bilkul bhai! Main tujhe **interview ke liye basic DSA (Data Structures and Algor
 - Time complexity aur space complexity zarur mention karna.
 - Agar coding karne ko bole, toh pehle dry-run kar lena 1 test case pe.
 - Agar stuck ho jaaye toh soch kar bata, turant give up mat kar.
-
----
-
-Agar tu chahe toh main inme se kisi bhi topic pe explanation + C++/JavaScript/Python code de sakta hoon — bas bol kis pe chahiye.
-
-Tu kis company ka interview de raha hai next? Bata de toh uske level ke questions bhi bata dunga.
